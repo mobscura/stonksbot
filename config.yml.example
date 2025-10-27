@@ -1,0 +1,16 @@
+telegram:
+  token: "YOUR_TELEGRAM_BOT_TOKEN_HERE"
+  robot_id: [123456789] 
+  receiver_id: [111111111] 
+bybit:
+  api_key: "YOUR_BYBIT_API_KEY_HERE"
+  secret_key: "YOUR_BYBIT_SECRET_KEY_HERE"
+  testnet: false 
+trading:
+  system: false
+  mode: false
+  tp: 1-2-3-5
+  stop: 2.25
+  risk: 0.63
+  leverage: 25
+  multiplier: 1

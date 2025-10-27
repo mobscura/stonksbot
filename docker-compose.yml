@@ -1,0 +1,13 @@
+services:
+  stonksbot:
+    build: .
+    container_name: stonksbot
+    restart: unless-stopped
+    volumes:
+      - .:/opt/pysetup
+      - ./config.yml:/stonksbot/config.yml:ro
+    environment:
+      - PYTHONPATH=/opt/pysetup
+      - TZ=UTC
+      - LANG=C.UTF-8
+      - PYTHONUNBUFFERED=1
